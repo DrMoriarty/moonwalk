@@ -65,8 +65,8 @@ AnimationWindow::AnimationWindow(QWidget *parent) :
     sk = new QShortcut(QKeySequence(Qt::Key_Minus), this, 0, 0, Qt::ApplicationShortcut);
     connect(sk, SIGNAL(activated()), this, SLOT(stepLess()));
 
-    connect(ui->actionAnimation, SIGNAL(activated()), this, SIGNAL(raiseAnimation()));
-    connect(ui->actionLevel, SIGNAL(activated()), this, SIGNAL(raiseLevel()));
+    connect(ui->actionAnimation, SIGNAL(triggered()), this, SIGNAL(raiseAnimation()));
+    connect(ui->actionLevel, SIGNAL(triggered()), this, SIGNAL(raiseLevel()));
 
     connect(&playTimer, SIGNAL(timeout()), this, SLOT(playFrame()));
     fsModel.setRootPath(QDir::homePath());

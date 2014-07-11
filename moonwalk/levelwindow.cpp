@@ -405,8 +405,8 @@ LevelWindow::LevelWindow(QWidget *parent) :
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose, true);
 
-    connect(ui->actionAnimation, SIGNAL(activated()), this, SIGNAL(raiseAnimation()));
-    connect(ui->actionLevel, SIGNAL(activated()), this, SIGNAL(raiseLevel()));
+    connect(ui->actionAnimation, SIGNAL(triggered()), this, SIGNAL(raiseAnimation()));
+    connect(ui->actionLevel, SIGNAL(triggered()), this, SIGNAL(raiseLevel()));
 
     ui->graphicsView->setScene(&scene);
     background = scene.addRect(0, 0, W_WIDTH, W_HEIGHT, QPen(), Qt::lightGray);

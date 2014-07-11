@@ -148,7 +148,7 @@
    </widget>
    <widget class="QMenu" name="menuMoon">
     <property name="title">
-     <string>Moon</string>
+     <string>Editor</string>
     </property>
     <addaction name="actionAnimation"/>
     <addaction name="actionLevel"/>
@@ -608,7 +608,7 @@
   </connection>
   <connection>
    <sender>actionNew</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>LevelWindow</receiver>
    <slot>newLevel()</slot>
    <hints>
@@ -624,7 +624,7 @@
   </connection>
   <connection>
    <sender>actionOpen</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>LevelWindow</receiver>
    <slot>openLevel()</slot>
    <hints>
@@ -640,7 +640,7 @@
   </connection>
   <connection>
    <sender>actionSave</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>LevelWindow</receiver>
    <slot>saveLevel()</slot>
    <hints>
@@ -656,7 +656,7 @@
   </connection>
   <connection>
    <sender>actionSave_as</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>LevelWindow</receiver>
    <slot>saveLevelAs()</slot>
    <hints>
@@ -846,8 +846,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionLevel</sender>
+   <signal>triggered()</signal>
+   <receiver>LevelWindow</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
+  <signal>raiseLevel()</signal>
+  <signal>raiseAnimation()</signal>
   <slot>setElementType(int)</slot>
   <slot>addElement()</slot>
   <slot>delElement()</slot>

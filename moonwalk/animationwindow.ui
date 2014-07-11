@@ -476,7 +476,7 @@
    </widget>
    <widget class="QMenu" name="menuMoon">
     <property name="title">
-     <string>Moon</string>
+     <string>Editor</string>
     </property>
     <addaction name="actionAnimation"/>
     <addaction name="actionLevel"/>
@@ -1870,7 +1870,7 @@
   </connection>
   <connection>
    <sender>actionFrame_Backward</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>AnimationWindow</receiver>
    <slot>SetPrevFrame()</slot>
    <hints>
@@ -1886,7 +1886,7 @@
   </connection>
   <connection>
    <sender>actionFrame_Forward</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>AnimationWindow</receiver>
    <slot>SetNextFrame()</slot>
    <hints>
@@ -1902,7 +1902,7 @@
   </connection>
   <connection>
    <sender>actionFirst_Frame</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>AnimationWindow</receiver>
    <slot>SetFirstFrame()</slot>
    <hints>
@@ -1918,7 +1918,7 @@
   </connection>
   <connection>
    <sender>actionLast_Frame</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>AnimationWindow</receiver>
    <slot>SetLastFrame()</slot>
    <hints>
@@ -1982,7 +1982,7 @@
   </connection>
   <connection>
    <sender>actionUndo</sender>
-   <signal>activated()</signal>
+   <signal>triggered()</signal>
    <receiver>AnimationWindow</receiver>
    <slot>Undo()</slot>
    <hints>
