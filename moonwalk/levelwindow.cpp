@@ -138,6 +138,8 @@ void ElementImage::Save(QXmlStreamWriter* writer)
     case PY_DYNAMIC:
         writer->writeAttribute("physics", "dynamic");
         break;
+    case PY_NONE:
+      break;
     }
     if(phys != PY_NONE) {
         foreach(QPointF p, poly->polygon()) {
@@ -297,6 +299,8 @@ void ElementPolygon::Save(QXmlStreamWriter* writer)
     case PY_DYNAMIC:
         writer->writeAttribute("physics", "dynamic");
         break;
+    case PY_NONE:
+      break;
     }
     foreach(QPointF p, gr->polygon()) {
         writer->writeStartElement("point");
@@ -389,8 +393,8 @@ int ElementPolygon::delPoint(int id)
 LevelWindow::LevelWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::LevelWindow),
-    curType(ET_NONE),
     nextElID(1),
+    curType(ET_NONE),
     SelectElement(false),
     windowX(0),
     windowY(0),

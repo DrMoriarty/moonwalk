@@ -16,7 +16,6 @@
 
 AnimationWindow::AnimationWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::AnimationWindow),
     boneID(1),
     poseID(1),
     curBone(0),
@@ -30,7 +29,8 @@ AnimationWindow::AnimationWindow(QWidget *parent) :
     ruler(RULER_NO),
     rulerPos(0.f),
     stepSize(8),
-    _showValues_(false)
+    _showValues_(false),
+    ui(new Ui::AnimationWindow)
 {
     ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose, true);
@@ -171,7 +171,7 @@ void AnimationWindow::loadPerson()
         // TODO
     } else {
         if(ui->treeWidget->topLevelItem(0)) {
-            int rootID = ui->treeWidget->topLevelItem(0)->data(0, Qt::UserRole).toInt();
+            //int rootID = ui->treeWidget->topLevelItem(0)->data(0, Qt::UserRole).toInt();
             ui->treeWidget->topLevelItem(0)->setSelected(true);
             ui->treeWidget->expandAll();
             selectBone(ui->treeWidget->topLevelItem(0), 0);
@@ -408,7 +408,7 @@ void AnimationWindow::drawArea(QPainter *painter, int width, int height)
         painter->restore();
     }
     if(!bones.size()) return;
-    int rootID = ui->treeWidget->topLevelItem(0)->data(0, Qt::UserRole).toInt();
+    //int rootID = ui->treeWidget->topLevelItem(0)->data(0, Qt::UserRole).toInt();
     if(Ghosts && GhostStep) {
         float dAlpha = 1.f / (Ghosts + 1);
         float alpha = dAlpha;

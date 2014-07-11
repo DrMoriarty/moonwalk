@@ -297,8 +297,8 @@ bool operator<(const Key& k1, const Key& k2)
 /////////////////
 
 Pose::Pose(QString name, int length)
-    :name(name)
-    ,length(length)
+  :length(length)
+  ,name(name)
 {
 }
 

@@ -8,8 +8,8 @@ public:
     float x, y, angle;
     int frame;
     bool active;
-    Key(): frame(-1), x(0), y(0), angle(0), active(true) {};
-    Key(int frame, float x, float y, float angle): frame(frame), x(x), y(y), angle(angle), active(true) {};
+    Key(): x(0), y(0), angle(0), frame(-1), active(true) {};
+    Key(int frame, float x, float y, float angle): x(x), y(y), angle(angle), frame(frame), active(true) {};
     Key(QXmlStreamReader* reader);
     void Save(QXmlStreamWriter* writer);
 };
