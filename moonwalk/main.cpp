@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+#include <QApplication>
 #include "main.h"
 
 Supervisor::Supervisor() : aw(0), lw(0)
@@ -57,7 +57,7 @@ void Supervisor::RmLevel()
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QApplication a(argc, argv);
     //AnimationWindow w;
     //w.show();
     Supervisor s;
