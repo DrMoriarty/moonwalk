@@ -1,0 +1,2103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnimationWindow</class>
+ <widget class="QMainWindow" name="AnimationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1169</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MoonTools/Animation</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowNestedDocks|QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::ForceTabbedDocks</set>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="tab_2">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QWidget" name="widget_tools" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Scale</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_viewScale">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="minimum">
+             <number>10</number>
+            </property>
+            <property name="maximum">
+             <number>200</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_reloadGraphics">
+            <property name="toolTip">
+             <string>Reload graphics</string>
+            </property>
+            <property name="text">
+             <string>➲</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_background">
+            <property name="toolTip">
+             <string>Set/Reset background</string>
+            </property>
+            <property name="text">
+             <string>BG</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_objects">
+            <property name="toolTip">
+             <string>Draw mode</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>draw both</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>skeleton</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>graphics</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBox_ghost">
+            <property name="text">
+             <string>Ghost</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_ghostNumber">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_ghostStep">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_ruler">
+            <property name="text">
+             <string>Ruler</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="DrawArea" name="drawArea" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="checkBox_deepCopy">
+            <property name="toolTip">
+             <string>Operate with children</string>
+            </property>
+            <property name="text">
+             <string>children</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_pasteKF">
+            <property name="toolTip">
+             <string>Paste key frame</string>
+            </property>
+            <property name="text">
+             <string>Paste</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_copyKF">
+            <property name="toolTip">
+             <string>Copy key frame</string>
+            </property>
+            <property name="text">
+             <string>Copy</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_keyFrame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="margin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_moveBwKF">
+               <property name="toolTip">
+                <string>Move backward</string>
+               </property>
+               <property name="text">
+                <string>Bw</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_delKeyFrame">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="toolTip">
+                <string>Delete key frame</string>
+               </property>
+               <property name="text">
+                <string>Del</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_moveFwKF">
+               <property name="toolTip">
+                <string>Move forward</string>
+               </property>
+               <property name="text">
+                <string>Fw</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_disableKF">
+               <property name="text">
+                <string>Disable</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_keyFrame" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_timeline" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QSpinBox" name="spinBox_currentFrame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_prevKF">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Previous key frame</string>
+            </property>
+            <property name="text">
+             <string>« </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_play">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Play</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_nextKF">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Next key frame</string>
+            </property>
+            <property name="text">
+             <string> »</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="TimeLine" name="timeline">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximum">
+             <number>25</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksBothSides</enum>
+            </property>
+            <property name="tickInterval">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_animationLength">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="value">
+             <number>25</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1169</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPerson">
+    <property name="title">
+     <string>Person</string>
+    </property>
+    <addaction name="actionPersonNew"/>
+    <addaction name="actionPersonLoad"/>
+    <addaction name="actionPersonSave"/>
+    <addaction name="actionPersonSave_as"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionPlay_Stop"/>
+    <addaction name="actionFrame_Forward"/>
+    <addaction name="actionFrame_Backward"/>
+    <addaction name="actionLast_Frame"/>
+    <addaction name="actionFirst_Frame"/>
+   </widget>
+   <widget class="QMenu" name="menuMoon">
+    <property name="title">
+     <string>Moon</string>
+    </property>
+    <addaction name="actionAnimation"/>
+    <addaction name="actionLevel"/>
+   </widget>
+   <addaction name="menuMoon"/>
+   <addaction name="menuPerson"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>Tool bar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPersonNew"/>
+   <addaction name="actionPersonLoad"/>
+   <addaction name="actionPersonSave"/>
+   <addaction name="actionUndo"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget_bones">
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Bones</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="widget_bones">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="leftMargin">
+      <number>12</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>12</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_12" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Current bone</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_boneName">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_boneAdd">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Add bone</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_boneDel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Delete bone</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_boneUp">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_boneDown">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_3" native="true">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>X</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_xValue">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Y</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_yValue">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>PivotX</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_xPivot">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>PivotY</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Angle</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_yPivot">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Z</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QSpinBox" name="spinBox_zCoord">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>-99</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_angle">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-360.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>360.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_poses">
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Poses</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="widget_poses">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="leftMargin">
+      <number>12</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>12</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_poseAdd">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Add pose</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_poseDel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Delete pose</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_poseCopy">
+          <property name="toolTip">
+           <string>Copy pose</string>
+          </property>
+          <property name="text">
+           <string>||</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_fileBrowser">
+   <property name="windowTitle">
+    <string>File browser</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="toolButton_setImageForBone">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Set image</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="widget_splitter">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTreeView" name="treeView_fs">
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="uniformRowHeights">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="animated">
+         <bool>true</bool>
+        </property>
+        <property name="allColumnsShowFocus">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>256</width>
+           <height>76</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_previewFile">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionPersonLoad">
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open animation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionPersonSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionPersonNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionPersonSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionFrame_Forward">
+   <property name="text">
+    <string>Frame Forward</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionFrame_Backward">
+   <property name="text">
+    <string>Frame Backward</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionFirst_Frame">
+   <property name="text">
+    <string>First Frame</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+Left</string>
+   </property>
+  </action>
+  <action name="actionLast_Frame">
+   <property name="text">
+    <string>Last Frame</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+Right</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionPlay_Stop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Play/Stop</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionAnimation">
+   <property name="text">
+    <string>Animation</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionLevel">
+   <property name="text">
+    <string>Level</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>DrawArea</class>
+   <extends>QWidget</extends>
+   <header>drawarea.h</header>
+   <container>1</container>
+   <slots>
+    <signal>customPaint(QPainter*,int,int)</signal>
+    <signal>dragMouse(float,float)</signal>
+    <signal>dragLeftMouse(float,float)</signal>
+    <signal>dragRightMouse(float,float)</signal>
+    <signal>dragMiddleMouse(float,float)</signal>
+    <signal>pressRightMouse(float,float)</signal>
+    <signal>pressLeftMouse(float,float)</signal>
+    <signal>pressMiddleMouse(float,float)</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>TimeLine</class>
+   <extends>QSlider</extends>
+   <header>timeline.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_boneAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>boneAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_boneDel</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>boneDel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_poseAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>poseAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>720</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_poseDel</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>poseDel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>808</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>itemActivated(QListWidgetItem*)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>selectPose(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>808</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>selectPose(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>itemActivated(QTreeWidgetItem*,int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>selectBone(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>selectBone(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drawArea</sender>
+   <signal>customPaint(QPainter*,int,int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>drawArea(QPainter*,int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drawArea</sender>
+   <signal>dragLeftMouse(float,float)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>dragLeftMouse(float,float)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drawArea</sender>
+   <signal>dragRightMouse(float,float)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>dragRightMouse(float,float)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPersonLoad</sender>
+   <signal>triggered()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>loadPerson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPersonSave</sender>
+   <signal>triggered()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>savePerson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPersonNew</sender>
+   <signal>triggered()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>newPerson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPersonSave_as</sender>
+   <signal>triggered()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>savePersonNewFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>timeline</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setFrame(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>528</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_viewScale</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setViewScale(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>940</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_animationLength</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setAnimationLength(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>itemChanged(QListWidgetItem*)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>renamePose(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>898</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_play</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>playPose(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_delKeyFrame</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>delKeyFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>945</x>
+     <y>529</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_nextKF</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>nextKeyFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_prevKF</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>prevKeyFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_copyKF</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>copyKeyFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>861</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_pasteKF</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>pasteKeyFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>938</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_boneUp</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>moveBoneUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_boneDown</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>moveBoneDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>itemEntered(QTreeWidgetItem*,int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>selectBone(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_fs</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>previewImageFile(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_fs</sender>
+   <signal>pressed(QModelIndex)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>previewImageFile(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_reloadGraphics</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>reloadGraphics()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>364</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_background</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setBackground(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>422</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_currentFrame</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>timeline</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>256</x>
+     <y>623</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>603</x>
+     <y>623</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>timeline</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_currentFrame</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>623</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>623</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_objects</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setVisibleObjects(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_disableKF</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>disableKeyFrame(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>798</x>
+     <y>593</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_deepCopy</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setDeepCopyFlag(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>557</x>
+     <y>591</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_moveBwKF</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>moveKeyFrameBw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>591</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_moveFwKF</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>moveKeyFrameFw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>591</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_ghost</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setGhost()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_ghostStep</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setGhost()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_ghostNumber</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setGhost()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>687</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_setImageForBone</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setImageForBone()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drawArea</sender>
+   <signal>dragMiddleMouse(float,float)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>dragMiddleMouse(float,float)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drawArea</sender>
+   <signal>pressRightMouse(float,float)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>pressRightMouse(float,float)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFrame_Backward</sender>
+   <signal>activated()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>SetPrevFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFrame_Forward</sender>
+   <signal>activated()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>SetNextFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFirst_Frame</sender>
+   <signal>activated()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>SetFirstFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLast_Frame</sender>
+   <signal>activated()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>SetLastFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_ruler</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setRuler(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>803</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drawArea</sender>
+   <signal>pressLeftMouse(float,float)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>pressLeftMouse(float,float)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_zCoord</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setZCoord(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>584</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionUndo</sender>
+   <signal>activated()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>Undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>584</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_poseCopy</sender>
+   <signal>clicked()</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>poseCopy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1055</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>584</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPlay_Stop</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>playPose(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>584</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doubleSpinBox_angle</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>AnimationWindow</receiver>
+   <slot>setAngle(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>584</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>raiseAnimation()</signal>
+  <signal>raiseLevel()</signal>
+  <slot>boneAdd()</slot>
+  <slot>boneDel()</slot>
+  <slot>poseAdd()</slot>
+  <slot>poseDel()</slot>
+  <slot>selectBone(QTreeWidgetItem*,int)</slot>
+  <slot>selectPose(QListWidgetItem*)</slot>
+  <slot>drawArea(QPainter*,int,int)</slot>
+  <slot>setX(double)</slot>
+  <slot>setY(double)</slot>
+  <slot>setAngle(double)</slot>
+  <slot>dragLeftMouse(float,float)</slot>
+  <slot>dragRightMouse(float,float)</slot>
+  <slot>setAnchorX(double)</slot>
+  <slot>setAnchorY(double)</slot>
+  <slot>loadPerson()</slot>
+  <slot>savePerson()</slot>
+  <slot>newPerson()</slot>
+  <slot>savePersonNewFile()</slot>
+  <slot>setFrame(int)</slot>
+  <slot>setViewScale(int)</slot>
+  <slot>setAnimationLength(int)</slot>
+  <slot>renamePose(QListWidgetItem*)</slot>
+  <slot>playPose(bool)</slot>
+  <slot>delKeyFrame()</slot>
+  <slot>nextKeyFrame()</slot>
+  <slot>prevKeyFrame()</slot>
+  <slot>copyKeyFrame()</slot>
+  <slot>pasteKeyFrame()</slot>
+  <slot>moveBoneUp()</slot>
+  <slot>moveBoneDown()</slot>
+  <slot>previewImageFile(QModelIndex)</slot>
+  <slot>reloadGraphics()</slot>
+  <slot>setImageForBone()</slot>
+  <slot>setBackground(bool)</slot>
+  <slot>setVisibleObjects(int)</slot>
+  <slot>disableKeyFrame(bool)</slot>
+  <slot>setDeepCopyFlag(bool)</slot>
+  <slot>moveKeyFrameFw()</slot>
+  <slot>moveKeyFrameBw()</slot>
+  <slot>setGhost()</slot>
+  <slot>dragMiddleMouse(float,float)</slot>
+  <slot>pressRightMouse(float,float)</slot>
+  <slot>SetNextFrame()</slot>
+  <slot>SetPrevFrame()</slot>
+  <slot>SetFirstFrame()</slot>
+  <slot>SetLastFrame()</slot>
+  <slot>setRuler(bool)</slot>
+  <slot>pressLeftMouse(float,float)</slot>
+  <slot>setZCoord(int)</slot>
+  <slot>Undo()</slot>
+  <slot>poseCopy()</slot>
+ </slots>
+</ui>

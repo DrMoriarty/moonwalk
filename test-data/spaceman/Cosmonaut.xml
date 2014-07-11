@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Person name="NamelessPerson">
+    <bone ID="1" x="0" y="-2" z="-4" angle="0" pivotX="-35" pivotY="-20" name="taz.png" file="taz.png">
+        <bone ID="2" x="5" y="-21" z="-5" angle="0" pivotX="-51.0223" pivotY="-108.082" name="body2.png" file="body2.png">
+            <bone ID="5" x="-6.22417" y="-34.5041" z="-2" angle="0" pivotX="-37.4889" pivotY="-8.63613" name="provod.png" file="provod.png"/>
+            <bone ID="6" x="14.0964" y="-126.623" z="-6" angle="1" pivotX="-45.2567" pivotY="-55.8782" name="head.png" file="head.png"/>
+            <bone ID="14" x="-21.5639" y="-66.2193" z="2" angle="4" pivotX="-32.3833" pivotY="-31.7383" name="Sholder_R.png" file="Sholder_R.png">
+                <bone ID="15" x="-8.03288" y="38.6325" z="3" angle="11" pivotX="-29.6972" pivotY="-6.56323" name="forearm_R.png" file="forearm_R.png">
+                    <bone ID="16" x="13.0715" y="35.5265" z="4" angle="-24" pivotX="-22.0622" pivotY="-7.36621" name="Hand_R.png" file="Hand_R.png"/>
+                </bone>
+            </bone>
+            <bone ID="17" x="28.8909" y="-73.5888" z="-13" angle="-7" pivotX="-35.6322" pivotY="-19.1119" name="Sholder_L.png" file="Sholder_L.png">
+                <bone ID="18" x="-4.54618" y="51.7719" z="-12" angle="12" pivotX="-20.2344" pivotY="-12.6321" name="Forearm_L.png" file="Forearm_L.png">
+                    <bone ID="19" x="7.90272" y="38.2433" z="-11" angle="-12" pivotX="-21.2017" pivotY="-9.97427" name="Hand_L.png" file="Hand_L.png"/>
+                </bone>
+            </bone>
+            <bone ID="20" x="-24.3024" y="-90.3958" z="-7" angle="-1" pivotX="-65.1017" pivotY="-117.318" name="Rukzak.png" file="Rukzak.png"/>
+        </bone>
+        <bone ID="4" x="35" y="4" z="-3" angle="0" pivotX="-5.81053" pivotY="-13.1566" name="metal_p.png" file="metal_p.png"/>
+        <bone ID="7" x="-5" y="23" z="-1" angle="0" pivotX="-26.9792" pivotY="-21.6585" name="Hip_R.png" file="Hip_R.png">
+            <bone ID="10" x="0.643263" y="46.2665" z="1" angle="0" pivotX="-26.903" pivotY="-5.76431" name="Knee_R.png" file="Knee_R.png">
+                <bone ID="11" x="-8.0562" y="54.1488" z="0" angle="0" pivotX="-19.1716" pivotY="-9.66688" name="Foot_R.png" file="Foot_R.png"/>
+            </bone>
+        </bone>
+        <bone ID="9" x="23" y="19" z="-9" angle="-4" pivotX="-32" pivotY="-16" name="Hip_L.png" file="Hip_L.png">
+            <bone ID="12" x="0.959888" y="55.392" z="-8" angle="1" pivotX="-24.6055" pivotY="-11.1702" name="Knee_L.png" file="Knee_L.png">
+                <bone ID="13" x="0.256881" y="45.8389" z="-10" angle="2" pivotX="-23.9683" pivotY="-7.71511" name="Foot_L.png" file="Foot_L.png"/>
+            </bone>
+        </bone>
+    </bone>
+    <pose length="27" name="RoboWalk">
+        <keys bone="1">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="3" x="6.875" y="9.375" angle="1.25"/>
+            <key frame="6" x="6.875" y="6.875" angle="1.25"/>
+            <key frame="9" x="3.125" y="0.625001" angle="1.25"/>
+            <key frame="12" x="4.375" y="-1.875" angle="1.25"/>
+            <key frame="15" x="1.875" y="5.625" angle="1.25"/>
+            <key frame="18" x="0" y="1.25" angle="0"/>
+            <key frame="21" x="0" y="2.5" angle="0"/>
+            <key frame="24" x="0" y="-5" angle="0"/>
+            <key frame="27" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1"/>
+            <key frame="27" x="0" y="0" angle="1"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="27" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="27" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="2"/>
+            <key frame="10" x="0" y="0" angle="2"/>
+            <key frame="27" x="0" y="0" angle="2"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="4"/>
+            <key frame="3" x="0" y="0" angle="-3.5"/>
+            <key frame="6" x="0" y="0" angle="-3.5"/>
+            <key frame="9" x="0" y="0" angle="-29.75"/>
+            <key frame="12" x="0" y="0" angle="-39.75"/>
+            <key frame="15" x="1.30424" y="2.47214" angle="-29.75"/>
+            <key frame="18" x="1.30424" y="2.47214" angle="-21"/>
+            <key frame="21" x="0.0542396" y="1.22214" angle="-9.75"/>
+            <key frame="24" x="0.0542396" y="1.22214" angle="4"/>
+            <key frame="27" x="0" y="0" angle="4"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="-28.75"/>
+            <key frame="3" x="0" y="0" angle="-25.625"/>
+            <key frame="6" x="0" y="0" angle="-15"/>
+            <key frame="9" x="0.0272686" y="1.2497" angle="8.75"/>
+            <key frame="12" x="0.0272686" y="1.2497" angle="13.75"/>
+            <key frame="15" x="-1.33151" y="-3.72184" angle="12.5"/>
+            <key frame="18" x="-1.33151" y="-3.72184" angle="8.75"/>
+            <key frame="21" x="-2.58151" y="-9.97184" angle="-16.25"/>
+            <key frame="24" x="-2.58151" y="-9.97184" angle="-36.25"/>
+            <key frame="27" x="0" y="0" angle="-28.75"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="-1.88452" y="1.20358" angle="41"/>
+            <key frame="3" x="-1.88452" y="1.20358" angle="48.5"/>
+            <key frame="6" x="1.96074" y="-1.14727" angle="24.75"/>
+            <key frame="9" x="1.96074" y="-1.14727" angle="29.75"/>
+            <key frame="12" x="1.96074" y="-1.14727" angle="4.75"/>
+            <key frame="15" x="1.96074" y="-1.14727" angle="12.25"/>
+            <key frame="18" x="0.616863" y="2.35366" angle="11"/>
+            <key frame="21" x="-4.41067" y="-0.973759" angle="7.25"/>
+            <key frame="24" x="-2.75535" y="-3.22596" angle="13.5"/>
+            <key frame="27" x="-1.88452" y="1.20358" angle="41"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="-4"/>
+            <key frame="3" x="0" y="0" angle="-14"/>
+            <key frame="6" x="0" y="0" angle="-12.75"/>
+            <key frame="9" x="0" y="0" angle="21"/>
+            <key frame="12" x="0" y="0" angle="11"/>
+            <key frame="15" x="0" y="0" angle="16"/>
+            <key frame="18" x="0" y="0" angle="8.5"/>
+            <key frame="21" x="0" y="0" angle="3.5"/>
+            <key frame="24" x="0" y="0" angle="4.75"/>
+            <key frame="27" x="0" y="0" angle="-4"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="-4.13125" y="1.80146" angle="16"/>
+            <key frame="3" x="-3.55963" y="0.015718" angle="17.25"/>
+            <key frame="6" x="-2.98801" y="-1.77002" angle="16"/>
+            <key frame="9" x="-3.70852" y="3.33325" angle="14.75"/>
+            <key frame="12" x="-3.70852" y="3.33325" angle="37.25"/>
+            <key frame="15" x="-2.89995" y="0.657669" angle="38.5"/>
+            <key frame="18" x="-2.89995" y="0.657669" angle="42.25"/>
+            <key frame="21" x="-2.89995" y="0.657669" angle="41"/>
+            <key frame="24" x="-2.89995" y="0.657669" angle="38.5"/>
+            <key frame="27" x="-4.13125" y="1.80146" angle="16"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="-1.5"/>
+            <key frame="3" x="0" y="0" angle="6"/>
+            <key frame="6" x="0" y="0" angle="-0.249999"/>
+            <key frame="9" x="0" y="0" angle="-15.25"/>
+            <key frame="11" x="0" y="0" angle="-9.83333"/>
+            <key frame="12" x="0" y="0" angle="17.25"/>
+            <key frame="15" x="0" y="0" angle="1"/>
+            <key frame="18" x="0" y="0" angle="-14"/>
+            <key frame="21" x="0" y="0" angle="-1.5"/>
+            <key frame="24" x="0" y="0" angle="4.75"/>
+            <key frame="27" x="0" y="0" angle="-1.5"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-16"/>
+            <key frame="27" x="0" y="0" angle="-16"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="-19"/>
+            <key frame="10" x="0" y="0" angle="-19"/>
+            <key frame="27" x="0" y="0" angle="-19"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="-6"/>
+            <key frame="27" x="0" y="0" angle="-6"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-9"/>
+            <key frame="27" x="0" y="0" angle="-9"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="-21"/>
+            <key frame="27" x="0" y="0" angle="-21"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-21"/>
+            <key frame="27" x="0" y="0" angle="-21"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="27" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="40" name="moonWalk2">
+        <keys bone="1">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="5" x="0" y="8.75" angle="1.25"/>
+            <key frame="10" x="0" y="2.5" angle="1.25"/>
+            <key frame="15" x="0" y="-3.75" angle="1.25"/>
+            <key frame="20" x="0" y="-5" angle="1.25"/>
+            <key frame="25" x="0" y="1.25" angle="1.25"/>
+            <key frame="30" x="0" y="8.75" angle="1.25"/>
+            <key frame="35" x="0" y="1.25" angle="1.25"/>
+            <key frame="40" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="15" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="3.75"/>
+            <key frame="5" x="0" y="0" angle="-7.5"/>
+            <key frame="10" x="0" y="0" angle="-16.25"/>
+            <key frame="15" x="0" y="0" angle="-37.5"/>
+            <key frame="20" x="0" y="0" angle="-51.25"/>
+            <key frame="25" x="0.0545372" y="2.49941" angle="-37.5"/>
+            <key frame="30" x="0.0545372" y="2.49941" angle="-21.25"/>
+            <key frame="35" x="0.0545372" y="2.49941" angle="1.25"/>
+            <key frame="40" x="0" y="0" angle="3.75"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="2.44487" y="-2.55394" angle="-23.75"/>
+            <key frame="5" x="0" y="0" angle="-12.5"/>
+            <key frame="10" x="-2.52667" y="-1.19517" angle="-5"/>
+            <key frame="13" x="-11.6" y="7.00472" angle="7.75"/>
+            <key frame="15" x="-7.41641" y="3.91272" angle="16.25"/>
+            <key frame="20" x="-3.69457" y="2.58121" angle="26.25"/>
+            <key frame="25" x="-4.99881" y="0.109074" angle="15"/>
+            <key frame="30" x="-5.10788" y="-4.88974" angle="1.25"/>
+            <key frame="35" x="2.56673e-06" y="1.07288e-06" angle="-31.25"/>
+            <key frame="40" x="2.44487" y="-2.55394" angle="-23.75"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="4.87203" y="-1.68102" angle="66.25"/>
+            <key frame="5" x="3.99988" y="-2.07689" angle="57.5"/>
+            <key frame="10" x="3.99988" y="-2.07689" angle="43.75"/>
+            <key frame="15" x="2.99182" y="-2.81603" angle="43.75"/>
+            <key frame="20" x="0.119156" y="-0.405574" angle="35"/>
+            <key frame="25" x="-1.35912" y="1.61054" angle="2.5"/>
+            <key frame="30" x="-1.35912" y="1.61054" angle="3.57628e-06"/>
+            <key frame="35" x="-2.37307" y="0.162468" angle="21.25"/>
+            <key frame="40" x="4.87203" y="-1.68102" angle="66.25"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="1.99741" y="-5.22114" angle="17.5"/>
+            <key frame="5" x="1.99741" y="-5.22114" angle="23.75"/>
+            <key frame="10" x="1.99741" y="-5.22114" angle="7.5"/>
+            <key frame="15" x="1.99741" y="-5.22114" angle="17.5"/>
+            <key frame="20" x="1.99741" y="-5.22114" angle="5"/>
+            <key frame="25" x="1.99741" y="-5.22114" angle="13.75"/>
+            <key frame="30" x="-0.369915" y="-6.02474" angle="18.75"/>
+            <key frame="35" x="-2.06315" y="-4.04595" angle="2"/>
+            <key frame="40" x="1.99741" y="-5.22114" angle="17.5"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="-5.59017" y="0.00634646" angle="8.75"/>
+            <key frame="5" x="0.328789" y="-1.20598" angle="11.25"/>
+            <key frame="10" x="-2.81429" y="2.14004" angle="1.25"/>
+            <key frame="15" x="-2.81429" y="2.14004" angle="25.5"/>
+            <key frame="20" x="-2.81429" y="2.14004" angle="26.25"/>
+            <key frame="25" x="-2.38842" y="-1.7898" angle="63.75"/>
+            <key frame="30" x="6.19448" y="-7.62749" angle="47.5"/>
+            <key frame="35" x="-5.27246" y="-14.0127" angle="47.5"/>
+            <key frame="40" x="-5.59017" y="0.00634646" angle="8.75"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="5" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="0"/>
+            <key frame="13" x="0" y="0" angle="-21.5"/>
+            <key frame="15" x="0" y="0" angle="-18.75"/>
+            <key frame="20" x="0" y="0" angle="11.25"/>
+            <key frame="25" x="0.610777" y="-1.09062" angle="18.75"/>
+            <key frame="30" x="0.610777" y="-1.09062" angle="-21.25"/>
+            <key frame="35" x="0.610777" y="-1.09062" angle="2.5"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-22.5"/>
+            <key frame="20" x="0" y="0" angle="31.6607"/>
+            <key frame="25" x="0" y="0" angle="38.433"/>
+            <key frame="30" x="0" y="0" angle="14.372"/>
+            <key frame="35" x="0" y="0" angle="-10.314"/>
+            <key frame="40" x="0" y="0" angle="-22.5"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="-17.5"/>
+            <key frame="10" x="0" y="0" angle="-11.875"/>
+            <key frame="20" x="0" y="0" angle="0.416666"/>
+            <key frame="25" x="0" y="0" angle="0.9375"/>
+            <key frame="30" x="0" y="0" angle="-18.125"/>
+            <key frame="35" x="0" y="0" angle="-9.0625"/>
+            <key frame="40" x="0" y="0" angle="-17.5"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="-6.25"/>
+            <key frame="10" x="0" y="0" angle="-5.3125"/>
+            <key frame="20" x="0" y="0" angle="-4.79167"/>
+            <key frame="25" x="0" y="0" angle="-1.40625"/>
+            <key frame="40" x="0" y="0" angle="-6.25"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="-3.74911" y="0.0818058" angle="47.5"/>
+            <key frame="5" x="-3.74911" y="0.0818058" angle="28.9062"/>
+            <key frame="10" x="-3.74911" y="0.0818058" angle="13.1696"/>
+            <key frame="15" x="-3.74911" y="0.0818058" angle="-2.1503"/>
+            <key frame="20" x="-3.74911" y="0.0818058" angle="-13.9702"/>
+            <key frame="25" x="-3.74911" y="0.0818058" angle="-18.2902"/>
+            <key frame="30" x="-3.74911" y="0.0818058" angle="-8.44346"/>
+            <key frame="35" x="-3.74911" y="0.0818058" angle="5.15327"/>
+            <key frame="40" x="-3.74911" y="0.0818058" angle="47.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="-13.75"/>
+            <key frame="6" x="0" y="0" angle="-8.375"/>
+            <key frame="15" x="0" y="0" angle="-22.1875"/>
+            <key frame="25" x="0" y="0" angle="-30.5625"/>
+            <key frame="30" x="0" y="0" angle="-7.04167"/>
+            <key frame="40" x="0" y="0" angle="-13.75"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-10"/>
+            <key frame="40" x="0" y="0" angle="-10"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="70" name="moonwalk3">
+        <keys bone="1">
+            <key frame="0" x="-2.5" y="17.5" angle="-2.5"/>
+            <key frame="10" x="-2.5" y="-5" angle="-2.5"/>
+            <key frame="20" x="-2.5" y="17.5" angle="-2.5"/>
+            <key frame="30" x="-2.5" y="-1.25" angle="-2.5"/>
+            <key frame="40" x="-2.5" y="10" angle="-2.5"/>
+            <key frame="50" x="-2.5" y="-5" angle="-2.5"/>
+            <key frame="60" x="-2.5" y="5.625" angle="-2.5"/>
+            <key frame="70" x="-2.5" y="15" angle="-2.5"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="70" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="70" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="70" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="70" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="-2.33405" y="-3.85548" angle="-7.5"/>
+            <key frame="10" x="0" y="0" angle="28.75"/>
+            <key frame="20" x="0" y="0" angle="-7.5"/>
+            <key frame="30" x="0" y="0" angle="-21.25"/>
+            <key frame="40" x="0" y="0" angle="-43.75"/>
+            <key frame="50" x="-0.0545242" y="1.24881" angle="-51.25"/>
+            <key frame="61" x="-1.41731" y="0.939072" angle="-29.9375"/>
+            <key frame="70" x="-2.33405" y="-3.85548" angle="-12.5"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="-20"/>
+            <key frame="10" x="0" y="0" angle="-38.75"/>
+            <key frame="20" x="-1.08524" y="-3.80096" angle="-16.25"/>
+            <key frame="30" x="-2.55215" y="1.13976" angle="6.25"/>
+            <key frame="40" x="-12.4336" y="-1.79405" angle="10"/>
+            <key frame="50" x="-2.55215" y="1.13976" angle="38.75"/>
+            <key frame="70" x="0" y="0" angle="-20"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="-0.213668" y="-7.11074" angle="16.25"/>
+            <key frame="4" x="0.904284" y="-5.74427" angle="5.25001"/>
+            <key frame="10" x="2.58121" y="-3.69457" angle="26.25"/>
+            <key frame="20" x="2.58121" y="-3.69457" angle="63.75"/>
+            <key frame="30" x="2.58121" y="-3.69457" angle="40"/>
+            <key frame="40" x="2.58121" y="-3.69457" angle="40"/>
+            <key frame="50" x="2.58121" y="-3.69457" angle="6.25001"/>
+            <key frame="60" x="-0.0980638" y="1.03238" angle="11.125"/>
+            <key frame="70" x="0.166396" y="-4.34162" angle="18.75"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="-6.25"/>
+            <key frame="4" x="0" y="0" angle="-2.25"/>
+            <key frame="10" x="0" y="0" angle="3.75"/>
+            <key frame="30" x="0.921597" y="-0.844488" angle="12.5"/>
+            <key frame="50" x="1.84319" y="-1.68898" angle="8.75"/>
+            <key frame="60" x="0.829437" y="-0.760039" angle="20.0625"/>
+            <key frame="70" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="5.78703" y="-13.9071" angle="48.75"/>
+            <key frame="10" x="-1.71892" y="0.412677" angle="6.25"/>
+            <key frame="20" x="-1.71892" y="0.412677" angle="18.75"/>
+            <key frame="30" x="-6.73524" y="4.14082" angle="-8.75"/>
+            <key frame="40" x="-6.73524" y="4.14082" angle="30"/>
+            <key frame="46" x="-8.11148" y="5.5151" angle="3.5"/>
+            <key frame="50" x="-3.45049" y="-2.36575" angle="15"/>
+            <key frame="60" x="0.354347" y="-5.77263" angle="43.125"/>
+            <key frame="61" x="-0.512442" y="-8.61469" angle="44.1875"/>
+            <key frame="70" x="4.15919" y="-9.17952" angle="53.75"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="-1.25"/>
+            <key frame="10" x="0" y="0" angle="10"/>
+            <key frame="20" x="0" y="0" angle="-1.875"/>
+            <key frame="30" x="0" y="0" angle="6.25"/>
+            <key frame="40" x="0" y="0" angle="-35"/>
+            <key frame="50" x="0" y="0" angle="2.5"/>
+            <key frame="70" x="0" y="0" angle="-1.25"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-8.75"/>
+            <key frame="10" x="0" y="0" angle="-22.5"/>
+            <key frame="20" x="0" y="0" angle="-10.8844"/>
+            <key frame="30" x="0" y="0" angle="-2.95755"/>
+            <key frame="40" x="0" y="0" angle="5.59434"/>
+            <key frame="50" x="0" y="0" angle="7.06289"/>
+            <key frame="70" x="0" y="0" angle="-8.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="-17.5"/>
+            <key frame="10" x="0" y="0" angle="-28.75"/>
+            <key frame="20" x="0" y="0" angle="-13.125"/>
+            <key frame="30" x="0" y="0" angle="-2.75"/>
+            <key frame="40" x="0" y="0" angle="2.3125"/>
+            <key frame="50" x="0" y="0" angle="5.70833"/>
+            <key frame="70" x="0" y="0" angle="-17.5"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="-12.5"/>
+            <key frame="40" x="0" y="0" angle="-8.75"/>
+            <key frame="50" x="0" y="0" angle="5"/>
+            <key frame="70" x="0" y="0" angle="-12.5"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="26.25"/>
+            <key frame="10" x="0" y="0" angle="37.6786"/>
+            <key frame="20" x="0" y="0" angle="17.8571"/>
+            <key frame="30" x="0" y="0" angle="-1.71429"/>
+            <key frame="40" x="0" y="0" angle="-8.47322"/>
+            <key frame="50" x="0" y="0" angle="-15.2321"/>
+            <key frame="70" x="0" y="0" angle="26.25"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="5"/>
+            <key frame="50" x="0" y="0" angle="-7.5"/>
+            <key frame="70" x="0" y="0" angle="5"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-5"/>
+            <key frame="50" x="-1.58862" y="0.775433" angle="-26.6071"/>
+            <key frame="70" x="0" y="0" angle="-5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="2.5"/>
+            <key frame="70" x="0" y="0" angle="2.5"/>
+        </keys>
+    </pose>
+    <pose length="30" name="run">
+        <keys bone="1">
+            <key frame="0" x="0" y="1.25" angle="0"/>
+            <key frame="5" x="0" y="13.75" angle="0"/>
+            <key frame="10" x="0" y="-11.25" angle="0"/>
+            <key frame="15" x="0" y="1.25" angle="0"/>
+            <key frame="20" x="0" y="13.75" angle="0"/>
+            <key frame="25" x="0" y="-16.25" angle="0"/>
+            <key frame="30" x="0" y="1.25" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="2.5"/>
+            <key frame="30" x="0" y="0" angle="2.5"/>
+        </keys>
+        <keys bone="4">
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="30"/>
+            <key frame="5" x="-0.625" y="0" angle="2.02656e-06"/>
+            <key frame="10" x="-1.25" y="0" angle="-51.25"/>
+            <key frame="15" x="-1.25" y="0" angle="-41.25"/>
+            <key frame="20" x="-1.25" y="0" angle="-35"/>
+            <key frame="25" x="-1.25" y="0" angle="13.75"/>
+            <key frame="30" x="0" y="0" angle="30"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="-23.75"/>
+            <key frame="5" x="0.625003" y="7.5" angle="-16.875"/>
+            <key frame="10" x="-8.75" y="2.5" angle="25"/>
+            <key frame="15" x="-20" y="1.25" angle="38.75"/>
+            <key frame="20" x="-20" y="1.25" angle="7.5"/>
+            <key frame="25" x="-7.5" y="-2.38419e-07" angle="-35"/>
+            <key frame="30" x="0" y="0" angle="-23.75"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="8.49279" y="-7.79006" angle="71.25"/>
+            <key frame="5" x="8.49279" y="-7.79006" angle="65"/>
+            <key frame="10" x="-0.130801" y="-6.32979" angle="75"/>
+            <key frame="15" x="-2.79207" y="5.13868" angle="-2.49999"/>
+            <key frame="20" x="-2.99601" y="-1.10799" angle="37.5"/>
+            <key frame="25" x="-2.79207" y="5.13868" angle="-7.49999"/>
+            <key frame="30" x="8.49279" y="-7.79006" angle="71.25"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="28.75"/>
+            <key frame="5" x="0" y="0" angle="15.625"/>
+            <key frame="10" x="0" y="0" angle="17.5"/>
+            <key frame="15" x="-4.38643" y="1.77636" angle="2.5"/>
+            <key frame="20" x="-0.766298" y="-0.908259" angle="2.5"/>
+            <key frame="25" x="-4.35793" y="0.742563" angle="20"/>
+            <key frame="30" x="0" y="0" angle="28.75"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="-1.68825" y="0.524216" angle="0"/>
+            <key frame="5" x="-3.46771" y="-11.7324" angle="40"/>
+            <key frame="10" x="-3.99524" y="1.69717" angle="6.25"/>
+            <key frame="15" x="1.29342" y="-13.3237" angle="77.5"/>
+            <key frame="20" x="0.814232" y="-17.4525" angle="77.5"/>
+            <key frame="25" x="-4.35039" y="-16.2855" angle="77.5"/>
+            <key frame="30" x="-1.68825" y="0.524216" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="5" x="0" y="0" angle="-21.25"/>
+            <key frame="10" x="0" y="0" angle="2.5"/>
+            <key frame="15" x="0" y="0" angle="8.75"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="6.3531" y="2.225" angle="-23.75"/>
+            <key frame="5" x="6.3531" y="2.225" angle="-10.4167"/>
+            <key frame="10" x="6.3531" y="2.225" angle="7.41666"/>
+            <key frame="15" x="6.3531" y="2.225" angle="21.5"/>
+            <key frame="30" x="6.3531" y="2.225" angle="-23.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="-3.94414" y="2.18088" angle="-75"/>
+            <key frame="5" x="-3.28678" y="1.8174" angle="-40.625"/>
+            <key frame="10" x="-2.62943" y="1.45392" angle="-17.125"/>
+            <key frame="15" x="-1.97207" y="1.09044" angle="5.125"/>
+            <key frame="30" x="-3.94414" y="2.18088" angle="-75"/>
+        </keys>
+        <keys bone="16">
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="46.25"/>
+            <key frame="5" x="0" y="0" angle="28.75"/>
+            <key frame="10" x="0" y="0" angle="-2.75"/>
+            <key frame="15" x="0" y="0" angle="-13"/>
+            <key frame="30" x="0" y="0" angle="46.25"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="10" x="0" y="0" angle="-18.75"/>
+            <key frame="15" x="0" y="0" angle="-73.75"/>
+            <key frame="30" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="19">
+            <key frame="15" x="0.761753" y="-2.68928" angle="-31.25"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="20">
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="30" name="Moonjump">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="5" x="0" y="31.25" angle="0"/>
+            <key frame="6" x="0" y="25.5" angle="1.25"/>
+            <key frame="10" x="0" y="-28.75" angle="0"/>
+            <key frame="15" x="0" y="-50" angle="0"/>
+            <key frame="20" x="0" y="-17.5" angle="0"/>
+            <key frame="25" x="0" y="15" angle="0"/>
+            <key frame="30" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="5" x="0" y="0" angle="8.75"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="4">
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="5" x="0" y="0" angle="-35"/>
+            <key frame="9" x="0" y="2.5" angle="-13"/>
+            <key frame="25" x="-1.25" y="-1.25" angle="-21.25"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="5" x="0" y="0" angle="-43.75"/>
+            <key frame="10" x="1.25" y="-2.5" angle="-6.25"/>
+            <key frame="25" x="1.25" y="-6.25" angle="-22.5"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="5" x="8.39758" y="-3.27576" angle="60"/>
+            <key frame="9" x="-0.496502" y="0.8453" angle="24.25"/>
+            <key frame="25" x="-0.970877" y="-4.40112" angle="36.25"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="5" x="0" y="0" angle="-23.75"/>
+            <key frame="9" x="0" y="0" angle="26"/>
+            <key frame="25" x="0" y="0" angle="-15"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="5" x="3.00073" y="-7.69061" angle="55"/>
+            <key frame="10" x="-6.09187" y="-1.33681" angle="21.5"/>
+            <key frame="25" x="-8.38517" y="-3.42754" angle="30"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="5" x="0" y="0" angle="-12.5"/>
+            <key frame="10" x="0.647014" y="-7.0414" angle="18.75"/>
+            <key frame="25" x="0" y="0" angle="-6.25"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="5" x="0" y="0" angle="-8"/>
+            <key frame="10" x="0" y="0" angle="7.75"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="15">
+            <key frame="5" x="0" y="0" angle="-28.75"/>
+            <key frame="10" x="0" y="0" angle="10.9375"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="5" x="0" y="0" angle="-10.75"/>
+            <key frame="10" x="0" y="0" angle="8.1875"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="18">
+            <key frame="5" x="-3.05585" y="3.31275" angle="-26.25"/>
+            <key frame="10" x="-2.29189" y="2.48456" angle="4.0625"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="5" x="0" y="0" angle="-18.75"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="20">
+            <key frame="25" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="40" name="Squatting">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="10" x="0" y="78.75" angle="0"/>
+            <key frame="30" x="0" y="78.75" angle="0"/>
+            <key frame="40" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="10" x="0" y="0" angle="18.75"/>
+            <key frame="22" x="0" y="0" angle="23.75"/>
+            <key frame="30" x="0" y="0" angle="18.75"/>
+            <key frame="32" x="0" y="0" angle="18.75"/>
+            <key frame="40" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="22" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+            <key frame="32" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-12.5"/>
+            <key frame="22" x="0" y="0" angle="-12.5"/>
+            <key frame="30" x="0" y="0" angle="-12.5"/>
+            <key frame="32" x="0" y="0" angle="-12.5"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="5" x="-0.625" y="-1.25" angle="0.625001"/>
+            <key frame="10" x="-1.25" y="-2.5" angle="11.25"/>
+            <key frame="30" x="-1.25" y="-2.5" angle="11.25"/>
+            <key frame="35" x="-0.625" y="-1.25" angle="6.875"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="5" x="0.625001" y="3.75" angle="-56.875"/>
+            <key frame="10" x="6.25" y="1.19209e-06" angle="-86.25"/>
+            <key frame="30" x="6.25" y="1.19209e-06" angle="-86.25"/>
+            <key frame="35" x="3.125" y="5.96046e-07" angle="-64.375"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="3" x="5.15052" y="-2.2784" angle="63.125"/>
+            <key frame="5" x="8.5842" y="-3.79734" angle="71.875"/>
+            <key frame="10" x="17.1684" y="-7.59468" angle="83.75"/>
+            <key frame="30" x="17.1684" y="-7.59468" angle="83.75"/>
+            <key frame="35" x="8.5842" y="-3.79734" angle="71.875"/>
+            <key frame="36" x="6.86736" y="-3.03787" angle="59.5"/>
+            <key frame="37" x="5.15052" y="-2.2784" angle="39.625"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="1" x="0" y="0" angle="-9.375"/>
+            <key frame="2" x="0" y="0" angle="-19.6875"/>
+            <key frame="5" x="0" y="0" angle="34.375"/>
+            <key frame="10" x="0" y="0" angle="28.75"/>
+            <key frame="30" x="0" y="0" angle="28.75"/>
+            <key frame="37" x="0" y="0" angle="-41.625"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="5" x="4.78371" y="-5.08539" angle="58.75"/>
+            <key frame="10" x="13.3456" y="-5.7614" angle="86.25"/>
+            <key frame="30" x="13.3456" y="-5.7614" angle="86.25"/>
+            <key frame="35" x="-0.979948" y="-5.22546" angle="65.625"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="5" x="0.0490842" y="-2.49952" angle="0"/>
+            <key frame="10" x="-0.0435514" y="-1.25296" angle="0"/>
+            <key frame="30" x="-0.0435514" y="-1.25296" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="10" x="-1.16193" y="4.35459" angle="10"/>
+            <key frame="22" x="-1.16193" y="4.35459" angle="10"/>
+            <key frame="30" x="-1.16193" y="4.35459" angle="10"/>
+            <key frame="32" x="-1.16193" y="4.35459" angle="10"/>
+            <key frame="40" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="3.75"/>
+            <key frame="22" x="0" y="0" angle="3.75"/>
+            <key frame="30" x="0" y="0" angle="3.75"/>
+            <key frame="32" x="0" y="0" angle="3.75"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="22" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+            <key frame="32" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="10" x="0" y="0" angle="25"/>
+            <key frame="22" x="0" y="0" angle="25"/>
+            <key frame="30" x="0" y="0" angle="25"/>
+            <key frame="32" x="0" y="0" angle="25"/>
+            <key frame="40" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0.698967" y="3.89056" angle="-95"/>
+            <key frame="22" x="0.698967" y="3.89056" angle="-95"/>
+            <key frame="30" x="0.698967" y="3.89056" angle="-95"/>
+            <key frame="32" x="0.698967" y="3.89056" angle="-95"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="10" x="0" y="0" angle="12.5"/>
+            <key frame="22" x="0" y="0" angle="12.5"/>
+            <key frame="30" x="0" y="0" angle="12.5"/>
+            <key frame="32" x="0" y="0" angle="12.5"/>
+            <key frame="40" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="22" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+            <key frame="32" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="50" name="wait">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="6" x="0" y="2.5" angle="0"/>
+            <key frame="42" x="0" y="2.5" angle="0"/>
+            <key frame="50" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="20" x="0" y="0" angle="-3.75"/>
+            <key frame="42" x="0" y="0" angle="1.25"/>
+            <key frame="50" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="20" x="0" y="0" angle="13.75"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="20" x="7.49822" y="-0.163612" angle="-53.75"/>
+            <key frame="22" x="7.49822" y="-0.163612" angle="-58.75"/>
+            <key frame="32" x="2.49941" y="-0.0545375" angle="-50"/>
+            <key frame="42" x="7.49822" y="-0.163612" angle="-58.75"/>
+            <key frame="50" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="20" x="3.3131" y="3.74478" angle="-13.75"/>
+            <key frame="22" x="3.05181" y="5.49313" angle="-13.75"/>
+            <key frame="32" x="-4.04233" y="0.220731" angle="-23.75"/>
+            <key frame="42" x="3.05181" y="5.49313" angle="-13.75"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="20" x="2.73212" y="-0.589953" angle="-16.25"/>
+            <key frame="22" x="4.12104" y="1.48872" angle="-8.75"/>
+            <key frame="32" x="2.77779" y="-0.619758" angle="-8.75"/>
+            <key frame="42" x="4.12104" y="1.48872" angle="-8.75"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="20" x="0" y="0" angle="-21.25"/>
+            <key frame="22" x="0" y="0" angle="-3.57628e-06"/>
+            <key frame="32" x="0" y="0" angle="-16.25"/>
+            <key frame="42" x="0" y="0" angle="-3.57628e-06"/>
+            <key frame="50" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="20" x="-5.12861" y="12.8188" angle="-66.25"/>
+            <key frame="22" x="-5.12861" y="12.8188" angle="-90"/>
+            <key frame="32" x="-5.12861" y="12.8188" angle="-78.75"/>
+            <key frame="42" x="-5.12861" y="12.8188" angle="-90"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="20" x="0" y="0" angle="-30"/>
+            <key frame="22" x="0" y="0" angle="-36.25"/>
+            <key frame="32" x="0" y="0" angle="-13.75"/>
+            <key frame="42" x="0" y="0" angle="-36.25"/>
+            <key frame="50" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="42" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="40" name="wait2">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="25" x="0" y="2.5" angle="0"/>
+            <key frame="40" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="40" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="14" x="0" y="0" angle="0"/>
+            <key frame="22" x="1.27697" y="1.22243" angle="2.5"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="17" x="0" y="0" angle="16.25"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="15" x="-6.16671" y="3.88545" angle="33.75"/>
+            <key frame="30" x="-2.46668" y="1.55418" angle="32.5"/>
+            <key frame="40" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="15" x="-0.601869" y="-2.72952" angle="-60"/>
+            <key frame="30" x="-0.240747" y="-1.09181" angle="-60.25"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="15" x="0" y="0" angle="-23.75"/>
+            <key frame="22" x="0" y="0" angle="-17.5"/>
+            <key frame="30" x="0" y="0" angle="-33.75"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="17" x="0" y="0" angle="-6.25"/>
+            <key frame="40" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="40" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="40" name="wait3">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="40" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="15" x="0" y="0" angle="21.25"/>
+            <key frame="40" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="15" x="0" y="0" angle="-22.5"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="13" x="0" y="0" angle="11.25"/>
+            <key frame="28" x="0" y="0" angle="-6.25"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="15" x="0" y="0" angle="3.75"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="13" x="2.94636" y="-4.40953" angle="19.1964"/>
+            <key frame="28" x="0" y="0" angle="22.5"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="13" x="0" y="0" angle="10"/>
+            <key frame="23" x="0" y="0" angle="-11.2037"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="15" x="0" y="0" angle="-3.75"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="10" x="1.2497" y="-0.0272686" angle="76.25"/>
+            <key frame="20" x="1.2497" y="-0.0272686" angle="92.5"/>
+            <key frame="30" x="1.2497" y="-0.0272686" angle="78.75"/>
+            <key frame="40" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-52.5"/>
+            <key frame="20" x="0.618135" y="0.0923809" angle="-66.25"/>
+            <key frame="30" x="1.23627" y="0.184762" angle="-60"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-23.75"/>
+            <key frame="30" x="0" y="0" angle="-10.4167"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="10" x="0" y="0" angle="87.5"/>
+            <key frame="20" x="0" y="0" angle="93.75"/>
+            <key frame="30" x="0" y="0" angle="108.75"/>
+            <key frame="40" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-55"/>
+            <key frame="30" x="0" y="0" angle="-83.3333"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="30" x="0" y="0" angle="-8.75"/>
+            <key frame="40" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="0"/>
+            <key frame="20" x="-0.136343" y="-6.24851" angle="0"/>
+            <key frame="30" x="0" y="0" angle="0"/>
+            <key frame="40" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="50" name="wait4">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="50" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="12" x="0" y="0" angle="-3.75"/>
+            <key frame="50" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="12" x="0" y="0" angle="-122.5"/>
+            <key frame="20" x="0" y="0" angle="-92.5"/>
+            <key frame="30" x="0" y="0" angle="-115"/>
+            <key frame="40" x="0" y="0" angle="-88.75"/>
+            <key frame="50" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="12" x="0" y="0" angle="-47.5"/>
+            <key frame="20" x="0" y="0" angle="-72.5"/>
+            <key frame="30" x="0" y="0" angle="-51.25"/>
+            <key frame="40" x="0" y="0" angle="-78.75"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="12" x="0" y="0" angle="-3.75001"/>
+            <key frame="50" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="12" x="0" y="0" angle="11.25"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="12" x="0" y="0" angle="-23.75"/>
+            <key frame="50" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="50" name="up">
+        <keys bone="1">
+            <key frame="0" x="-1.25" y="93.75" angle="90"/>
+            <key frame="15" x="0.375" y="78.875" angle="63"/>
+            <key frame="26" x="24.0071" y="71.1214" angle="43.2"/>
+            <key frame="50" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="-1.25"/>
+            <key frame="6" x="0" y="0" angle="-8.1"/>
+            <key frame="15" x="0" y="0" angle="-23.375"/>
+            <key frame="26" x="0" y="0" angle="-16.8857"/>
+            <key frame="50" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="-23.75"/>
+            <key frame="26" x="0" y="0" angle="-26.4"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="-25"/>
+            <key frame="15" x="0" y="0" angle="-70"/>
+            <key frame="38" x="0" y="0" angle="-4"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="-8.75"/>
+            <key frame="15" x="0" y="0" angle="12.625"/>
+            <key frame="26" x="-10.6797" y="-25.9809" angle="-32.5929"/>
+            <key frame="31" x="-0.342862" y="-17.0579" angle="-57.3652"/>
+            <key frame="34" x="5.85923" y="-11.7041" angle="-84.7643"/>
+            <key frame="38" x="14.1287" y="-4.56567" angle="-95.0464"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="15" x="12.8638" y="-2.19868" angle="93.75"/>
+            <key frame="38" x="4.41046" y="-0.753833" angle="39.6429"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="57.5"/>
+            <key frame="15" x="0" y="0" angle="35.25"/>
+            <key frame="26" x="0" y="0" angle="99.1714"/>
+            <key frame="38" x="0" y="0" angle="60.8357"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="2.5"/>
+            <key frame="26" x="0" y="0" angle="61.2"/>
+            <key frame="31" x="-0.679226" y="-3.05029" angle="103.867"/>
+            <key frame="34" x="-1.08676" y="-4.88047" angle="114.788"/>
+            <key frame="38" x="-1.63014" y="-7.3207" angle="85.6"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="46.25"/>
+            <key frame="15" x="0" y="0" angle="64.875"/>
+            <key frame="26" x="0" y="0" angle="78.2357"/>
+            <key frame="34" x="0" y="0" angle="46.3238"/>
+            <key frame="38" x="0" y="0" angle="-7.13214"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-37.5"/>
+            <key frame="6" x="0" y="0" angle="-44.9"/>
+            <key frame="11" x="0" y="0" angle="-64.8167"/>
+            <key frame="17" x="5.39847" y="4.82576" angle="-51.05"/>
+            <key frame="26" x="7.22801" y="8.97599" angle="-30.4"/>
+            <key frame="38" x="3.614" y="4.488" angle="13.55"/>
+            <key frame="50" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="-97.5"/>
+            <key frame="6" x="0" y="0" angle="-45.9868"/>
+            <key frame="11" x="0" y="0" angle="3.85485"/>
+            <key frame="16" x="0" y="0" angle="21.7599"/>
+            <key frame="21" x="0" y="0" angle="21.6632"/>
+            <key frame="26" x="0" y="0" angle="12.7182"/>
+            <key frame="38" x="0" y="0" angle="-30"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="5"/>
+            <key frame="7" x="0" y="0" angle="49.7"/>
+            <key frame="15" x="0" y="0" angle="-37.25"/>
+            <key frame="38" x="0" y="0" angle="0.585715"/>
+            <key frame="50" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="7" x="0" y="0" angle="-98.75"/>
+            <key frame="15" x="0" y="0" angle="-4.12791"/>
+            <key frame="26" x="-2.00388" y="6.05058" angle="-2.83057"/>
+            <key frame="38" x="-1.00194" y="3.02529" angle="-38.9153"/>
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="15" x="0.97612" y="-2.6191" angle="-54.5"/>
+            <key frame="26" x="0.669339" y="-1.79595" angle="-6.90715"/>
+            <key frame="50" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="50" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="40" name="falls">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="6" x="-4.5" y="10" angle="0"/>
+            <key frame="10" x="-7.5" y="8.75" angle="0"/>
+            <key frame="22" x="-15" y="15" angle="0"/>
+            <key frame="30" x="-15" y="6.25" angle="0"/>
+            <key frame="40" x="-43.75" y="35" angle="-46.25"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="6" x="0" y="0" angle="-17.75"/>
+            <key frame="10" x="0" y="0" angle="-13.75"/>
+            <key frame="16" x="0" y="0" angle="-30"/>
+            <key frame="30" x="0" y="0" angle="-40"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-23.75"/>
+            <key frame="24" x="0" y="0" angle="18.75"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="3" x="0" y="0.375" angle="-10.5"/>
+            <key frame="10" x="0" y="1.25" angle="-22.5"/>
+            <key frame="22" x="0" y="1.25" angle="-28.75"/>
+            <key frame="30" x="0" y="1.25" angle="-28.75"/>
+            <key frame="40" x="0" y="1.25" angle="-70"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="6" x="-1.25" y="11.25" angle="-20"/>
+            <key frame="14" x="0.588235" y="8.38235" angle="-24.7059"/>
+            <key frame="18" x="10.625" y="-8.125" angle="-72.5"/>
+            <key frame="26" x="6.76136" y="-5.17045" angle="-61.4773"/>
+            <key frame="30" x="4.82955" y="-3.69318" angle="-78.0195"/>
+            <key frame="40" x="0" y="0" angle="-80"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="3" x="-0.489961" y="0.202948" angle="11.375"/>
+            <key frame="10" x="-1.6332" y="0.676495" angle="21.25"/>
+            <key frame="22" x="0.558613" y="1.87897" angle="21.25"/>
+            <key frame="30" x="0.558613" y="1.87897" angle="21.25"/>
+            <key frame="40" x="0.558613" y="1.87897" angle="-1.25"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="3" x="0" y="0" angle="0.397727"/>
+            <key frame="6" x="0" y="0" angle="-16.7045"/>
+            <key frame="22" x="0" y="0" angle="-16.25"/>
+            <key frame="30" x="0" y="0" angle="7.5"/>
+            <key frame="40" x="0" y="0" angle="33.75"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="6" x="-1.09136" y="-8.93676" angle="27.5"/>
+            <key frame="16" x="-7.11954" y="-7.57667" angle="25.3676"/>
+            <key frame="30" x="-2.96648" y="-3.15695" angle="28.3824"/>
+            <key frame="40" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="3" x="0" y="0" angle="-1.125"/>
+            <key frame="10" x="0" y="0" angle="-3.75"/>
+            <key frame="14" x="-1.45781" y="6.20482" angle="-3.75"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="10" x="0" y="0" angle="-18.75"/>
+            <key frame="16" x="0" y="0" angle="45"/>
+            <key frame="22" x="0" y="0" angle="61.25"/>
+            <key frame="30" x="0" y="0" angle="38.75"/>
+            <key frame="40" x="0" y="0" angle="-72.5"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-15"/>
+            <key frame="16" x="0" y="0" angle="-18.75"/>
+            <key frame="22" x="0" y="0" angle="12.5"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="10" x="0" y="0" angle="-15"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="10" x="0" y="0" angle="-3.75"/>
+            <key frame="22" x="0" y="0" angle="-47.5"/>
+            <key frame="30" x="0" y="0" angle="-25"/>
+            <key frame="40" x="0" y="0" angle="-58.75"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="30" x="0" y="0" angle="3.75"/>
+            <key frame="40" x="0" y="0" angle="-13.75"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="24" name="slow step">
+        <keys bone="1">
+            <key frame="0" x="0" y="3.75" angle="1.25"/>
+            <key frame="3" x="0" y="7.5" angle="1.25"/>
+            <key frame="6" x="0" y="3.75" angle="1.25"/>
+            <key frame="9" x="0" y="-5" angle="1.25"/>
+            <key frame="12" x="0" y="3.75" angle="1.25"/>
+            <key frame="15" x="0" y="7.5" angle="1.25"/>
+            <key frame="18" x="0" y="3.75" angle="1.25"/>
+            <key frame="21" x="0" y="-5" angle="1.25"/>
+            <key frame="24" x="0" y="3.75" angle="1.25"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="-2.38419e-07"/>
+            <key frame="24" x="0" y="0" angle="-2.38419e-07"/>
+        </keys>
+        <keys bone="4">
+            <key frame="24" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="-3.1665e-08" angle="-2.5"/>
+            <key frame="24" x="0" y="-3.1665e-08" angle="-2.5"/>
+        </keys>
+        <keys bone="6">
+            <key frame="24" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="2.4997" y="-2.52727" angle="2.5"/>
+            <key frame="3" x="2.4997" y="-2.52727" angle="-18.75"/>
+            <key frame="6" x="2.4997" y="-2.52727" angle="-43.75"/>
+            <key frame="9" x="-1.14033" y="2.55335" angle="-70"/>
+            <key frame="12" x="3.91302" y="4.94368" angle="-31.25"/>
+            <key frame="15" x="0.0548351" y="0.0266728" angle="-28.75"/>
+            <key frame="18" x="-2.44457" y="0.0812101" angle="-13.75"/>
+            <key frame="21" x="-2.3355" y="5.08002" angle="-1.25"/>
+            <key frame="24" x="2.4997" y="-2.52727" angle="2.5"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="2.44546" y="0.000595331" angle="-18.75"/>
+            <key frame="3" x="2.44546" y="0.000595331" angle="-13.75"/>
+            <key frame="6" x="2.44546" y="0.000595331" angle="-1.19209e-06"/>
+            <key frame="9" x="-3.77578" y="1.38664" angle="7.5"/>
+            <key frame="12" x="-3.77578" y="1.38664" angle="12.5"/>
+            <key frame="15" x="-4.97094" y="3.91331" angle="-2.5034e-06"/>
+            <key frame="18" x="-2.60788" y="-2.38974" angle="-22.5"/>
+            <key frame="21" x="5.02668" y="3.69516" angle="-33.75"/>
+            <key frame="24" x="2.44546" y="0.000595331" angle="-18.75"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="-3.88116" y="-1.05355" angle="28.75"/>
+            <key frame="3" x="-3.88116" y="-1.05355" angle="58.75"/>
+            <key frame="6" x="-3.88116" y="-1.05355" angle="76.25"/>
+            <key frame="9" x="0.325834" y="-4.03075" angle="67.5"/>
+            <key frame="12" x="-0.634103" y="2.63191" angle="-3.74999"/>
+            <key frame="15" x="-0.634103" y="2.63191" angle="18.75"/>
+            <key frame="18" x="-4.36983" y="2.30508" angle="10"/>
+            <key frame="21" x="-4.36983" y="2.30508" angle="16.25"/>
+            <key frame="24" x="-3.88116" y="-1.05355" angle="28.75"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="-5.96046e-08" y="2.38419e-07" angle="11.25"/>
+            <key frame="9" x="-5.96046e-08" y="2.38419e-07" angle="18.75"/>
+            <key frame="12" x="-5.96046e-08" y="2.38419e-07" angle="12.5"/>
+            <key frame="15" x="-5.96046e-08" y="2.38419e-07" angle="6.25"/>
+            <key frame="18" x="-5.96046e-08" y="2.38419e-07" angle="3.75"/>
+            <key frame="21" x="-5.96046e-08" y="2.38419e-07" angle="-10"/>
+            <key frame="24" x="-5.96046e-08" y="2.38419e-07" angle="11.25"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="-2.77076" y="0.367978" angle="3.75"/>
+            <key frame="3" x="-2.77076" y="0.367978" angle="31.25"/>
+            <key frame="6" x="-7.88494" y="2.62521" angle="23.75"/>
+            <key frame="9" x="-11.5186" y="4.18145" angle="23.75"/>
+            <key frame="12" x="-7.22583" y="-0.361137" angle="43.75"/>
+            <key frame="15" x="-5.62209" y="-9.74479" angle="70"/>
+            <key frame="18" x="2.1636" y="-11.601" angle="68.75"/>
+            <key frame="21" x="-3.94186" y="-17.8952" angle="45"/>
+            <key frame="24" x="-2.77076" y="0.367978" angle="3.75"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="-0.281189" y="1.21796" angle="7.5"/>
+            <key frame="3" x="-0.281189" y="1.21796" angle="-15"/>
+            <key frame="6" x="-0.281189" y="1.21796" angle="-18.75"/>
+            <key frame="9" x="-0.281189" y="1.21796" angle="-8.75"/>
+            <key frame="12" x="-0.281189" y="1.21796" angle="7.5"/>
+            <key frame="15" x="-0.281189" y="1.21796" angle="13.75"/>
+            <key frame="18" x="-0.281189" y="1.21796" angle="6.25"/>
+            <key frame="21" x="-0.281189" y="1.21796" angle="-13.75"/>
+            <key frame="24" x="-0.281189" y="1.21796" angle="7.5"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="2.52667" y="1.19517" angle="-30"/>
+            <key frame="3" x="2.52667" y="1.19517" angle="-10"/>
+            <key frame="6" x="2.52667" y="1.19517" angle="-5"/>
+            <key frame="9" x="2.52667" y="1.19517" angle="15"/>
+            <key frame="12" x="2.52667" y="1.19517" angle="33.75"/>
+            <key frame="15" x="2.52667" y="1.19517" angle="25"/>
+            <key frame="18" x="2.52667" y="1.19517" angle="5"/>
+            <key frame="24" x="2.52667" y="1.19517" angle="-30"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="-17.5"/>
+            <key frame="3" x="0" y="0" angle="-21.25"/>
+            <key frame="6" x="0" y="0" angle="-2.5"/>
+            <key frame="9" x="0" y="0" angle="-7.5"/>
+            <key frame="12" x="0" y="0" angle="-23.75"/>
+            <key frame="15" x="0" y="0" angle="-18.75"/>
+            <key frame="24" x="0" y="0" angle="-17.5"/>
+        </keys>
+        <keys bone="16">
+            <key frame="24" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="-12.5788" y="-3.47642" angle="15"/>
+            <key frame="3" x="-12.5788" y="-3.47642" angle="3.75"/>
+            <key frame="6" x="-12.5788" y="-3.47642" angle="6.25"/>
+            <key frame="9" x="-12.5788" y="-3.47642" angle="-1.25"/>
+            <key frame="12" x="-5.85168" y="3.59875" angle="-5"/>
+            <key frame="15" x="-3.7658" y="-2.80138" angle="7.15256e-07"/>
+            <key frame="18" x="-3.7658" y="-2.80138" angle="11.25"/>
+            <key frame="24" x="-12.5788" y="-3.47642" angle="15"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="31.25"/>
+            <key frame="6" x="0" y="0" angle="-12.5"/>
+            <key frame="9" x="0" y="0" angle="-20"/>
+            <key frame="24" x="0" y="0" angle="31.25"/>
+        </keys>
+        <keys bone="19">
+            <key frame="24" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="20">
+            <key frame="24" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+    <pose length="25" name="press button">
+        <keys bone="1">
+            <key frame="0" x="0" y="2.5" angle="0"/>
+            <key frame="25" x="0" y="2.5" angle="0"/>
+        </keys>
+        <keys bone="2">
+            <key frame="0" x="0" y="0" angle="1.25"/>
+            <key frame="25" x="0" y="0" angle="1.25"/>
+        </keys>
+        <keys bone="4">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="5">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="6">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="7">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="9">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="10">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="11">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="12">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="13">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="14">
+            <key frame="0" x="0" y="0" angle="-3.75"/>
+            <key frame="8" x="0" y="0" angle="1.25"/>
+            <key frame="25" x="0" y="0" angle="-3.75"/>
+        </keys>
+        <keys bone="15">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="16">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="17">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="8" x="-6.19398" y="2.63575" angle="-61.25"/>
+            <key frame="12" x="-4.50347" y="3.71024" angle="-69.0278"/>
+            <key frame="14" x="2.67211" y="7.86025" angle="-79.6667"/>
+            <key frame="17" x="-2.39033" y="5.05335" angle="-67.5"/>
+            <key frame="25" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="18">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="8" x="0" y="0" angle="-15"/>
+            <key frame="11" x="0" y="0" angle="-32.5"/>
+            <key frame="14" x="0" y="0" angle="-19.375"/>
+            <key frame="17" x="0" y="0" angle="-38.75"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+        <keys bone="19">
+            <key frame="0" x="0" y="0" angle="-2.5"/>
+            <key frame="8" x="0" y="0" angle="6.25"/>
+            <key frame="11" x="0" y="0" angle="-4.04412"/>
+            <key frame="25" x="0" y="0" angle="-2.5"/>
+        </keys>
+        <keys bone="20">
+            <key frame="0" x="0" y="0" angle="0"/>
+            <key frame="25" x="0" y="0" angle="0"/>
+        </keys>
+    </pose>
+</Person>

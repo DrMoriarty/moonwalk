@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level name="Demo">
+  <element parallax="0.01" x="100" y="50">
+    <image texture="planet.png"/>
+  </element>
+  <!--element parallax="1.0" >
+    <particle system="waterfall.pex" x="240" y="160"/>
+  </element-->
+  <element parallax="0.5">
+	<image texture="Bg_mounty_s.png" y="50" scale="2.0"/>
+  </element>
+  <element parallax="0.7">
+	<image texture="Tree_bg_s.png" y="-100" scale="2.0"/>
+  </element>
+  <element parallax="0.8">
+	<image texture="water surface_s.png" y="250" scale="2.0"/>
+  </element>
+
+  <element>
+	<image texture="ground_s.png" y="200" scale="2.0"/>
+	<person file="Cosmonaut.xml" x="100" y="200" player="yes" scale="0.5"/>
+	<image texture="Stone.png" x="1220" y="90"/>
+	<image texture="water.png" x="735" y="320" scale="0.5"/>
+
+	<image texture="wood_box.png" x="1100" y="40"/>
+	<image texture="ice_box.png" x="1100" y="100"/>
+	<image texture="metall_box.png" x="1100" y="160"/>
+	<image texture="Stone_box.png" x="1100" y="220"/>
+
+	<image texture="wood_trunk.png" x="100" y="-350"/>
+	<image texture="wood_trunk.png" x="500" y="-350"/>
+	<image texture="wood_trunk.png" x="900" y="-350"/>
+	<image texture="wood_trunk.png" x="1400" y="-350"/>
+  </element>
+  <element parallax="2.0">
+	<image texture="decorative1.png" y="-50" x="10"/>
+	<image texture="decorative2.png" y="350" x="650"/>
+	<image texture="decorative3.png" y="-50" x="1700"/>
+  </element>
+</level>
