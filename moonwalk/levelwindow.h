@@ -2,6 +2,9 @@
 #define LEVELWINDOW_H
 
 #include <QtGui>
+#include <QMainWindow>
+#include <QGraphicsItem>
+#include <QGraphicsScene>
 
 typedef enum {ET_NONE = 0, ET_IMAGE, ET_POLYGON} ElementType;
 typedef enum {PY_NONE = 0, PY_STATIC, PY_DYNAMIC} ElementPhysic;

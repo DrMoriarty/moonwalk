@@ -1,5 +1,7 @@
 #include "levelwindow.h"
 #include "ui_levelwindow.h"
+#include <QMessageBox>
+#include <QFileDialog>
 
 #define COMPANY "HeartGames"
 #define APPNAME "LevelEditor"

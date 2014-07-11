@@ -4,11 +4,12 @@
 #
 #-------------------------------------------------
 
-QT       += core gui xml
+QT       += core gui xml widgets
 
-TARGET = MoonAnimation
+TARGET = MoonWalk
 TEMPLATE = app
 ICON = editor.icns
+CONFIG += debug
 
 SOURCES += main.cpp\
     animationwindow.cpp \

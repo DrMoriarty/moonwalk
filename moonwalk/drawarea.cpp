@@ -16,8 +16,8 @@ void DrawArea::paintEvent(QPaintEvent *pe)
 
 void DrawArea::mouseMoveEvent ( QMouseEvent * event )
 {
-    QPointF dm = event->posF() - mousePos;
-    mousePos = event->posF();
+    QPointF dm = event->localPos() - mousePos;
+    mousePos = event->localPos();
     mod = event->modifiers();
     if(curButton == Qt::LeftButton) emit dragLeftMouse(dm.x(), dm.y());
     if(curButton == Qt::RightButton) emit dragRightMouse(dm.x(), dm.y());
@@ -27,7 +27,7 @@ void DrawArea::mouseMoveEvent ( QMouseEvent * event )
 void DrawArea::mousePressEvent ( QMouseEvent * event )
 {
     curButton = event->button();
-    mousePos = event->posF();
+    mousePos = event->localPos();
     mod = event->modifiers();
     if(curButton == Qt::LeftButton) emit pressLeftMouse(mousePos.x(), mousePos.y());
     if(curButton == Qt::RightButton) emit pressRightMouse(mousePos.x(), mousePos.y());

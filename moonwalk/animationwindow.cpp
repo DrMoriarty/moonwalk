@@ -1,6 +1,9 @@
 #include "animationwindow.h"
 #include "ui_animationwindow.h"
 #include <QDomDocument>
+#include <QShortcut>
+#include <QMessageBox>
+#include <QFileDialog>
 #include <assert.h>
 
 #define COMPANY "HeartGames"
@@ -1143,7 +1146,7 @@ void AnimationWindow::poseCopy()
             found = false;
             foreach(Pose *p, poses) if(p->name == pName) {
                 QChar ch = pName[pName.size()-1];
-                if(ch < 'z') pName[pName.size()-1] = ch.toAscii() + 1;
+                if(ch < 'z') pName[pName.size()-1] = ch.toLatin1() + 1;
                 else pName += "1";
                 found = true;
             }

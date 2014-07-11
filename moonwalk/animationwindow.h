@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QtGui>
+#include <QMainWindow>
+#include <QTreeWidget>
+#include <QListWidget>
+#include <QFileSystemModel>
 #include "anim.h"
 
 namespace Ui {
